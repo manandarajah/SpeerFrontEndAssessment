@@ -1,12 +1,22 @@
 /* All sections */
 
 .box {
-  width: 98.95vw;
+  width: 98vw;
   height: 98.95vh;
 }
 
 /* section 3 */
 
 #section3 {
+  color: white;
   height: 60vh;
+}
+
+#section3 > .row {
+  position: relative;
+  margin-left: 33em;
+}
+
+#section3 > .row > .col-3 > div > input:focus {
+  background-color: #cc99ff;
 }
