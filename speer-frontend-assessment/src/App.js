@@ -14,12 +14,12 @@ function App() {
       <Section id="section3" backgroundColor="#7300e6">
         <h1>Payments</h1>
         <Row>
-          <Col xs={3}>
+          <Col xs={2}>
             <InputGroup>
               <Form.Control type="number" placeholder="Price"/>
             </InputGroup>
           </Col>
-          <Col xs={3}>
+          <Col xs={2}>
             <InputGroup>
               <Form.Control type="button" value="Download"/>
             </InputGroup>

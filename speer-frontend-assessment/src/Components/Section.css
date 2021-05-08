@@ -13,10 +13,9 @@
 }
 
 #section3 > .row {
-  position: relative;
-  margin-left: 33em;
+  margin-left: 40em;
 }
 
-#section3 > .row > .col-3 > div > input:focus {
+#section3 > .row > .col-2 > div > input:focus {
   background-color: #cc99ff;
 }
