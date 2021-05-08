@@ -1,23 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
+import Section from './Components/Section';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Section id="section1" backgroundColor="#1a1a1a"></Section>
+      <Section id="section2" backgroundColor="#ff3333"></Section>
+      <Section id="section3" backgroundColor="#7300e6">
+        <h1>Payments</h1>
+      </Section>
     </div>
   );
 }
