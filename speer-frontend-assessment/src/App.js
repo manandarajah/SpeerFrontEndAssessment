@@ -9,6 +9,20 @@ import {Col} from 'react-bootstrap';
 import {Button} from 'react-bootstrap';
 
 function App() {
+
+  function hoverButton(e) {
+    /*var x = e.pageX - e.target.offsetLeft;
+  	var y = e.pageY - e.target.offsetTop;*/
+
+    var x = e.pageX;
+    var y = e.pageY;
+
+    //console.log(e.pageX + " " + e.pageY);
+
+  	e.target.style.setProperty('--x', x + 'px');
+  	e.target.style.setProperty('--y', y + 'px');
+  }
+
   return (
     <div className="App">
       <Screen id="pricing" backgroundColor="#1a1a1a">
@@ -26,7 +40,7 @@ function App() {
               <li>It's so good</li>
               <li>Features</li>
             </ul>
-            <Button size="lg" style={{backgroundColor: "#ff3333"}}>Select</Button>
+            <Button onMouseMove={hoverButton} size="lg" style={{backgroundColor: "#ff3333"}}>Select</Button>
           </Col>
           <Col>
             <h3>Advanced<br/>------<br/>Yearly</h3>
@@ -39,7 +53,7 @@ function App() {
               <li>It's so so good</li>
               <li>More Features</li>
             </ul>
-            <Button size="lg" style={{backgroundColor: "#ffcc66"}}>Select</Button>
+            <Button onMouseMove={hoverButton} size="lg" style={{backgroundColor: "#ffcc66"}}>Select</Button>
           </Col>
           <Col>
             <h3>Pro<br/>------<br/>Yearly</h3>
@@ -52,7 +66,7 @@ function App() {
               <li>It's so so good</li>
               <li>More Features</li>
             </ul>
-            <Button size="lg" style={{backgroundColor: "#00cccc"}}>Select</Button>
+            <Button onMouseMove={hoverButton} size="lg" style={{backgroundColor: "#00cccc"}}>Select</Button>
           </Col>
         </Row>
       </Screen>

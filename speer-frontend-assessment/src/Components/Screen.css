@@ -24,6 +24,46 @@
 .btn {
   padding: 10px 70px 10px 70px;
   border-radius: 100px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
+  border-radius: 100px;
+}
+
+.btn::before {
+  --size: 0;
+  content: '';
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  width: var(--size);
+  height: var(--size);
+  background: radial-gradient(circle closest-side, #4405f7, transparent);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  transition: width .2s ease, height .2s ease;
+}
+
+.btn:hover::before {
+  --size: 400px;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+}
+
+li {
+  padding-left: 1.3em;
+}
+
+li::before {
+  content: "\f8cf";
+  font-family: FontAwesome;
+  display: inline-block;
 }
 
 #pricing > .row > .col {
