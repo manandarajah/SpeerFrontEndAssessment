@@ -10,21 +10,27 @@ import {Button} from 'react-bootstrap';
 
 function App() {
 
-  function hoverButton(e) {
-    /*var x = e.pageX - e.target.offsetLeft;
-  	var y = e.pageY - e.target.offsetTop;*/
+  function getMouseInfo(e) {
+    //console.log(e.pageX + " " + e.pageY);
+  }
 
-    var x = e.pageX;
-    var y = e.pageY;
+  function hoverButton(e) {
+    var x = e.pageX - e.target.offsetLeft;
+  	var y = e.pageY - e.target.offsetTop;
+
+    /*var x = e.pageX;
+    var y = e.pageY;*/
 
     //console.log(e.pageX + " " + e.pageY);
 
   	e.target.style.setProperty('--x', x + 'px');
   	e.target.style.setProperty('--y', y + 'px');
+
+    //console.log(e.target.style.getPropertyValue("--x") + " " + e.target.style.getPropertyValue("--y"));
   }
 
   return (
-    <div className="App">
+    <div onMouseMove={getMouseInfo} className="App">
       <Screen id="pricing" backgroundColor="#1a1a1a">
         <h1>PRICING</h1>
         <p>Test out our app today! Choose from three subscription based payment models</p>
@@ -77,6 +83,8 @@ function App() {
       </Screen>
       <Screen id="payment" backgroundColor="#7300e6">
         <h1>Payments</h1>
+        <p><i class="fas fa-envelope"></i> support@experienceconcerts.co</p>
+        <h1>EXP|CON</h1>
         <Row>
           <Col xs={2}>
             <InputGroup>

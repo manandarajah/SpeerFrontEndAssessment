@@ -98,10 +98,20 @@ li::before {
   height: 60vh;
 }
 
+#payment > p {
+  font-size: 40px;
+  float: left;
+  margin-left: 3em;
+}
+
+#payment > h1:last-child {
+  margin-top: 50em;
+}
+
 #payment > .row {
   margin-left: 40em;
 }
 
-#payment > div > .row > .col-2 > div > input:focus {
+#payment > .row > .col-2 > div > input:focus {
   background-color: #cc99ff;
 }
