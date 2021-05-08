@@ -6,16 +6,36 @@
 }
 
 #pricing > h1 {
-  margin-left: 1em;
+  margin-left: 1.7em;
+  font-size: 50px;
+  font-family: sans-serif;
+  font-weight: bold;
 }
 
-#pricing > .row > .col, #pricing > p {
+#pricing > .row > .col {
   margin-left: 3em;
+}
+
+#pricing > p {
+  margin-left: 2.2em;
+  font-size: 40px;
 }
 
 .btn {
   padding: 10px 70px 10px 70px;
   border-radius: 100px;
+}
+
+#pricing > .row > .col {
+  font-size: 30px;
+}
+
+#pricing > .row > .col > h1 {
+  font-size: 100px;
+}
+
+#pricing > .row > .col > h3 {
+  font-size: 35px;
 }
 
 #pricing > .row > .col:first-child > h3, #pricing > .row > .col:first-child > h1 {

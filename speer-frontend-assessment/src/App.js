@@ -12,11 +12,11 @@ function App() {
   return (
     <div className="App">
       <Screen id="pricing" backgroundColor="#1a1a1a">
-        <h1>Pricing</h1>
+        <h1>PRICING</h1>
         <p>Test out our app today! Choose from three subscription based payment models</p>
         <Row>
           <Col>
-            <h3>Basic|Monthly</h3>
+            <h3>Basic<br/>------<br/>Monthly</h3>
             <h1>$9</h1>
             <ul>
               <li>Very good</li>
@@ -29,7 +29,7 @@ function App() {
             <Button size="lg" style={{backgroundColor: "#ff3333"}}>Select</Button>
           </Col>
           <Col>
-            <h3>Advanced|Yearly</h3>
+            <h3>Advanced<br/>------<br/>Yearly</h3>
             <h1>$99</h1>
             <ul>
               <li>Very good</li>
@@ -42,7 +42,7 @@ function App() {
             <Button size="lg" style={{backgroundColor: "#ffcc66"}}>Select</Button>
           </Col>
           <Col>
-            <h3>Pro/Yearly</h3>
+            <h3>Pro<br/>------<br/>Yearly</h3>
             <h1>$120</h1>
             <ul>
               <li>Very very good</li>
