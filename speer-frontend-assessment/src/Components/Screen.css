@@ -5,6 +5,31 @@
   text-align: left;
 }
 
+#pricing > h1 {
+  margin-left: 1em;
+}
+
+#pricing > .row > .col, #pricing > p {
+  margin-left: 3em;
+}
+
+.btn {
+  padding: 10px 70px 10px 70px;
+  border-radius: 100px;
+}
+
+#pricing > .row > .col:first-child > h3, #pricing > .row > .col:first-child > h1 {
+  color: #ff3333;
+}
+
+#pricing > .row > .col:nth-child(2) > h3, #pricing > .row > .col:nth-child(2) > h1 {
+  color: #ffcc66;
+}
+
+#pricing > .row > .col:last-child > h3, #pricing > .row > .col:last-child > h1 {
+  color: #00cccc;
+}
+
 /* payment */
 
 #payment {
