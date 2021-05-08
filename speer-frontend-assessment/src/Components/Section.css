@@ -1,21 +1,5 @@
-/* All sections */
+/* hero */
 
-.box {
-  width: 98vw;
-  height: 98.95vh;
-}
-
-/* section 3 */
-
-#section3 {
+#hero {
   color: white;
-  height: 60vh;
-}
-
-#section3 > .row {
-  margin-left: 40em;
-}
-
-#section3 > .row > .col-2 > div > input:focus {
-  background-color: #cc99ff;
 }

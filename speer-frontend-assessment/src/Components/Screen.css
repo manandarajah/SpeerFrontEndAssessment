@@ -1,0 +1,22 @@
+/* pricing */
+
+#pricing {
+  color: white;
+  text-align: left;
+}
+
+/* payment */
+
+#payment {
+  color: white;
+  width: 98vw;
+  height: 60vh;
+}
+
+#payment > .row {
+  margin-left: 40em;
+}
+
+#payment > div > .row > .col-2 > div > input:focus {
+  background-color: #cc99ff;
+}

@@ -1,3 +1,12 @@
+/* All screens */
+
+.box {
+  width: 98vw;
+  height: 98.95vh;
+}
+
+/* App */
+
 .App {
   text-align: center;
 }
