@@ -54,11 +54,11 @@ function App() {
         break;
       case "reviewstry":
         x -= 600;
-        y -= 700;
+        y -= 790;
         break;
       case "getexptry":
         x -= 600;
-        y -= 750;
+        y -= 840;
         break;
     }
 
