@@ -50,8 +50,7 @@ function App() {
         y -= 290;
         break;
       case "perkstry":
-        x += 100;
-        y -= 650;
+        y -= 710;
         break;
       case "reviewstry":
         x -= 600;

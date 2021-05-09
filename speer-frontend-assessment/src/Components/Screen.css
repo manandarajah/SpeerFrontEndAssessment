@@ -102,7 +102,7 @@ ul, li {
 /* perks */
 
 #perks > .row > .col > p {
-  margin-left: 2em;
+  margin-left: 2.9em;
 }
 
 #perks > .row > .col > p:first-of-type {
@@ -110,7 +110,11 @@ ul, li {
 }
 
 #perks > .row > .col > h3 {
-  margin-left: 1em;
+  margin-left: 2.4em;
+}
+
+#perkstry {
+  margin-left: 5.4em;
 }
 
 /* payment */
