@@ -22,6 +22,7 @@
 }
 
 .btn {
+  position: relative;
   padding: 10px 70px 10px 70px;
   border-radius: 100px;
   -webkit-appearance: none;

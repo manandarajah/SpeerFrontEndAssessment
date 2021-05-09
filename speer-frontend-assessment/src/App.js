@@ -18,8 +18,8 @@ function App() {
     /*var x = e.pageX - e.target.offsetLeft;
   	var y = e.pageY - e.target.offsetTop;*/
 
-    var x = e.pageX - 80;
-    var y = e.pageY - 130;
+    var x = e.pageX - 90;
+    var y = e.pageY - 700;
 
     //centers the animation point
     switch (e.target.id) {
