@@ -117,11 +117,11 @@ function App() {
           <Button id="pricingbtn" onMouseMove={hoverButton}><span>Pricing</span></Button>
         </Section>
         <Section id="red" backgroundColor="#ff3333">
-          <Button id="redtry" onMouseMove={hoverButton}><span>Try Now</span></Button>
+          <Button id="redtry" onMouseMove={hoverButton}><span>Try it now</span></Button>
           <Button id="reddemo" onMouseMove={hoverButton}><span>See Demo</span></Button>
         </Section>
         <Section id="yellow" backgroundColor="#ffff66">
-          <Button id="yellowtry" onMouseMove={hoverButton}><span>Try Now</span></Button>
+          <Button id="yellowtry" onMouseMove={hoverButton}><span>Try it now</span></Button>
           <Button id="yellowdemo" onMouseMove={hoverButton}><span>See Demo</span></Button>
         </Section>
       </Screen>
