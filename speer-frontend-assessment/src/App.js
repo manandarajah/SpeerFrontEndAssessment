@@ -15,11 +15,20 @@ function App() {
   }
 
   function hoverButton(e) {
-    var x = e.pageX - e.target.offsetLeft;
-  	var y = e.pageY - e.target.offsetTop;
+    /*var x = e.pageX - e.target.offsetLeft;
+  	var y = e.pageY - e.target.offsetTop;*/
 
-    /*var x = e.pageX;
-    var y = e.pageY;*/
+    var x = e.pageX - 80;
+    var y = e.pageY - 130;
+
+    switch (e.target.id) {
+      case "advanced":
+        x -= 530;
+        break;
+      case "pro":
+        x -= 1060;
+        break;
+    }
 
     //console.log(e.pageX + " " + e.pageY);
 
@@ -46,7 +55,9 @@ function App() {
               <li>It's so good</li>
               <li>Features</li>
             </ul>
-            <Button onMouseMove={hoverButton} size="lg" style={{backgroundColor: "#ff3333"}}>Select</Button>
+            <Button id={"basic"} onMouseMove={hoverButton} size="lg" style={{backgroundColor: "#ff3333"}}>
+              <span>Select</span>
+            </Button>
           </Col>
           <Col>
             <h3>Advanced<br/>------<br/>Yearly</h3>
@@ -59,7 +70,9 @@ function App() {
               <li>It's so so good</li>
               <li>More Features</li>
             </ul>
-            <Button onMouseMove={hoverButton} size="lg" style={{backgroundColor: "#ffcc66"}}>Select</Button>
+            <Button id={"advanced"} onMouseMove={hoverButton} size="lg" style={{backgroundColor: "#ffcc66"}}>
+              <span>Select</span>
+            </Button>
           </Col>
           <Col>
             <h3>Pro<br/>------<br/>Yearly</h3>
@@ -72,7 +85,9 @@ function App() {
               <li>It's so so good</li>
               <li>More Features</li>
             </ul>
-            <Button onMouseMove={hoverButton} size="lg" style={{backgroundColor: "#00cccc"}}>Select</Button>
+            <Button id={"pro"} onMouseMove={hoverButton} size="lg" style={{backgroundColor: "#00cccc"}}>
+              <span>Select</span>
+            </Button>
           </Col>
         </Row>
       </Screen>
@@ -97,7 +112,7 @@ function App() {
           </Col>
         </Row>
         <h1>EXP|CON</h1>
-        <p>2021 All Rights Reserved | Speer Technologies Icorporated</p>
+        <p>2021 © All Rights Reserved | Speer Technologies Icorporated</p>
       </Screen>
     </div>
   );
