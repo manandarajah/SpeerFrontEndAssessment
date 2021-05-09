@@ -93,9 +93,17 @@ function App() {
         </Row>
       </Screen>
       <Screen id="main">
-        <Section id="hero"></Section>
-        <Section id="red" backgroundColor="#ff3333"></Section>
-        <Section id="yellow" backgroundColor="#ffff66"></Section>
+        <Section id="hero">
+          <Button>Pricing</Button>
+        </Section>
+        <Section id="red" backgroundColor="#ff3333">
+          <Button>Try Now</Button>
+          <Button>See Demo</Button>
+        </Section>
+        <Section id="yellow" backgroundColor="#ffff66">
+          <Button>Try Now</Button>
+          <Button>See Demo</Button>
+        </Section>
       </Screen>
       <Screen id="payment" backgroundColor="#7300e6">
         <h1>Payments</h1>
