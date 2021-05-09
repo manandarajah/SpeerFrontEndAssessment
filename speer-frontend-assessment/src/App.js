@@ -50,16 +50,16 @@ function App() {
         y -= 290;
         break;
       case "perkstry":
-        x -= 600;
-        y -= 345;
+        x += 100;
+        y -= 650;
         break;
       case "reviewstry":
         x -= 600;
-        y -= 375;
+        y -= 700;
         break;
       case "getexptry":
         x -= 600;
-        y -= 420;
+        y -= 750;
         break;
     }
 
