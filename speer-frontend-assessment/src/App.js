@@ -29,6 +29,26 @@ function App() {
       case "pro":
         x -= 1060;
         break;
+      case "pricingbtn":
+        x -= 600;
+        y -= 200;
+        break;
+      case "redtry":
+        x -= 490;
+        y -= 250;
+        break;
+      case "reddemo":
+        x -= 690;
+        y -= 250;
+        break;
+      case "yellowtry":
+        x -= 490;
+        y -= 290;
+        break;
+      case "yellowdemo":
+        x -= 690;
+        y -= 290;
+        break;
     }
 
     //console.log(e.pageX + " " + e.pageY);
@@ -94,15 +114,15 @@ function App() {
       </Screen>
       <Screen id="main">
         <Section id="hero">
-          <Button>Pricing</Button>
+          <Button id="pricingbtn" onMouseMove={hoverButton}><span>Pricing</span></Button>
         </Section>
         <Section id="red" backgroundColor="#ff3333">
-          <Button>Try Now</Button>
-          <Button>See Demo</Button>
+          <Button id="redtry" onMouseMove={hoverButton}><span>Try Now</span></Button>
+          <Button id="reddemo" onMouseMove={hoverButton}><span>See Demo</span></Button>
         </Section>
         <Section id="yellow" backgroundColor="#ffff66">
-          <Button>Try Now</Button>
-          <Button>See Demo</Button>
+          <Button id="yellowtry" onMouseMove={hoverButton}><span>Try Now</span></Button>
+          <Button id="yellowdemo" onMouseMove={hoverButton}><span>See Demo</span></Button>
         </Section>
       </Screen>
       <Screen id="payment" backgroundColor="#7300e6">
