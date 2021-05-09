@@ -84,7 +84,6 @@ function App() {
       <Screen id="payment" backgroundColor="#7300e6">
         <h1>Payments</h1>
         <p><i class="fas fa-envelope"></i> support@experienceconcerts.co</p>
-        <h1>EXP|CON</h1>
         <Row>
           <Col xs={2}>
             <InputGroup>
@@ -97,6 +96,8 @@ function App() {
             </InputGroup>
           </Col>
         </Row>
+        <h1>EXP|CON</h1>
+        <p>2021 All Rights Reserved | Speer Technologies Icorporated</p>
       </Screen>
     </div>
   );
