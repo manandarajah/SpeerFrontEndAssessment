@@ -10,8 +10,9 @@ import {Button} from 'react-bootstrap';
 
 function App() {
 
-  function getMouseInfo(e) {
+  function redirect() {
     //console.log(e.pageX + " " + e.pageY);
+    window.location.href = "#payment";
   }
 
   function hoverButton(e) {
@@ -71,7 +72,7 @@ function App() {
   }
 
   return (
-    <div onMouseMove={getMouseInfo} className="App">
+    <div className="App">
       <Screen id="pricing" backgroundColor="#1a1a1a">
         <h1>PRICING</h1>
         <p>Test out our app today! Choose from three subscription based payment models</p>
@@ -87,7 +88,7 @@ function App() {
               <li><i class="fas fa-angle-right"></i> It's so good</li>
               <li><i class="fas fa-angle-right"></i> Features</li>
             </ul>
-            <Button id={"basic"} onMouseMove={hoverButton} size="lg" style={{backgroundColor: "#ff3333"}}>
+            <Button id={"basic"} onMouseMove={hoverButton} onClick={redirect} size="lg" style={{backgroundColor: "#ff3333"}}>
               <span>Select</span>
             </Button>
           </Col>
@@ -102,7 +103,7 @@ function App() {
               <li><i class="fas fa-angle-right"></i> It's so so good</li>
               <li><i class="fas fa-angle-right"></i> More Features</li>
             </ul>
-            <Button id={"advanced"} onMouseMove={hoverButton} size="lg" style={{backgroundColor: "#ffcc66"}}>
+            <Button id={"advanced"} onMouseMove={hoverButton} onClick={redirect} size="lg" style={{backgroundColor: "#ffcc66"}}>
               <span>Select</span>
             </Button>
           </Col>
@@ -117,7 +118,7 @@ function App() {
               <li><i class="fas fa-angle-right"></i> It's so so good</li>
               <li><i class="fas fa-angle-right"></i> More Features</li>
             </ul>
-            <Button id={"pro"} onMouseMove={hoverButton} size="lg" style={{backgroundColor: "#00cccc"}}>
+            <Button id={"pro"} onMouseMove={hoverButton} onClick={redirect} size="lg" style={{backgroundColor: "#00cccc"}}>
               <span>Select</span>
             </Button>
           </Col>
