@@ -101,6 +101,10 @@ ul, li {
 
 /* perks */
 
+#perks {
+  height: 60vh;
+}
+
 #perks > .row > .col > p {
   margin-left: 2.9em;
 }
