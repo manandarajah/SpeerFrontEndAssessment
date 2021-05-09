@@ -1,17 +1,5 @@
 /* pricing */
 
-#pricing {
-  color: white;
-  text-align: left;
-}
-
-#pricing > h1 {
-  margin-left: 1.7em;
-  font-size: 50px;
-  font-family: sans-serif;
-  font-weight: bold;
-}
-
 #pricing > .row > .col {
   margin-left: 3em;
 }
@@ -69,16 +57,8 @@ ul, li {
   display: inline-block;
 } */
 
-#pricing > .row > .col {
-  font-size: 30px;
-}
-
 #pricing > .row > .col > h1 {
   font-size: 100px;
-}
-
-#pricing > .row > .col > h3 {
-  font-size: 35px;
 }
 
 #pricing > .row > .col:first-child > h3, #pricing > .row > .col:first-child > h1 {
@@ -91,6 +71,46 @@ ul, li {
 
 #pricing > .row > .col:last-child > h3, #pricing > .row > .col:last-child > h1 {
   color: #00cccc;
+}
+
+/* pricing & perks */
+
+#pricing, #perks {
+  color: white;
+  text-align: left;
+}
+
+#pricing > h1, #perks > h1 {
+  margin-left: 1.7em;
+  font-size: 50px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+#pricing > .row > .col, #perks > .row > .col {
+  font-size: 30px;
+}
+
+#pricing > .row > .col > h3, #perks > .row > .col > h3 {
+  font-size: 35px;
+}
+
+#pricing > .row > .col > p, #perks > .row > .col > p {
+  color: #1a1a1a;
+}
+
+/* perks */
+
+#perks > .row > .col > p {
+  margin-left: 2em;
+}
+
+#perks > .row > .col > p:first-of-type {
+  color: white;
+}
+
+#perks > .row > .col > h3 {
+  margin-left: 1em;
 }
 
 /* payment */

@@ -49,6 +49,18 @@ function App() {
         x -= 690;
         y -= 290;
         break;
+      case "perkstry":
+        x -= 600;
+        y -= 345;
+        break;
+      case "reviewstry":
+        x -= 600;
+        y -= 375;
+        break;
+      case "getexptry":
+        x -= 600;
+        y -= 420;
+        break;
     }
 
     //console.log(e.pageX + " " + e.pageY);
@@ -123,6 +135,33 @@ function App() {
         <Section id="yellow" backgroundColor="#ffff66">
           <Button id="yellowtry" onMouseMove={hoverButton}><span>Try it now</span></Button>
           <Button id="yellowdemo" onMouseMove={hoverButton}><span>See Demo</span></Button>
+        </Section>
+        <Section id="perks" backgroundColor="#ff3333">
+          <h1>PERKS</h1>
+          <Row>
+            <Col>
+              <p>-------</p>
+              <h3>Subscription Payment Model</h3>
+              <p>No committment, cancel anytime. Never worry about forgetting a payment again!</p>
+            </Col>
+            <Col>
+              <p>-------</p>
+              <h3>No Fee Cancellation Policy</h3>
+              <p>No committment, cancel anytime. Never worry about forgetting a payment again!</p>
+            </Col>
+            <Col>
+              <p>-------</p>
+              <h3>Subscription Payment Model</h3>
+              <p>No committment, cancel anytime. Never worry about forgetting a payment again!</p>
+            </Col>
+          </Row>
+          <Button id="perkstry" onMouseMove={hoverButton}><span>Try it now</span></Button>
+        </Section>
+        <Section id="reviews">
+          <Button id="reviewstry" onMouseMove={hoverButton}><span>Try it now</span></Button>
+        </Section>
+        <Section id="getexpnow">
+          <Button id="getexptry" onMouseMove={hoverButton}><span>Try it now</span></Button>
         </Section>
       </Screen>
       <Screen id="payment" backgroundColor="#7300e6">
