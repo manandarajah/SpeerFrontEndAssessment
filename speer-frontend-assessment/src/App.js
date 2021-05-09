@@ -49,12 +49,12 @@ function App() {
             <h3>Basic<br/>------<br/>Monthly</h3>
             <h1>$9</h1>
             <ul>
-              <li>Very good</li>
-              <li>Amazing</li>
-              <li>Perfect Job</li>
-              <li>Love this</li>
-              <li>It's so good</li>
-              <li>Features</li>
+              <li><i class="fas fa-angle-right"></i> Very good</li>
+              <li><i class="fas fa-angle-right"></i> Amazing</li>
+              <li><i class="fas fa-angle-right"></i> Perfect Job</li>
+              <li><i class="fas fa-angle-right"></i> Love this</li>
+              <li><i class="fas fa-angle-right"></i> It's so good</li>
+              <li><i class="fas fa-angle-right"></i> Features</li>
             </ul>
             <Button id={"basic"} onMouseMove={hoverButton} size="lg" style={{backgroundColor: "#ff3333"}}>
               <span>Select</span>
@@ -64,12 +64,12 @@ function App() {
             <h3>Advanced<br/>------<br/>Yearly</h3>
             <h1>$99</h1>
             <ul>
-              <li>Very good</li>
-              <li>Even Amazing</li>
-              <li>Perfect Job</li>
-              <li>Love this more</li>
-              <li>It's so so good</li>
-              <li>More Features</li>
+              <li><i class="fas fa-angle-right"></i> Very good</li>
+              <li><i class="fas fa-angle-right"></i> Even Amazing</li>
+              <li><i class="fas fa-angle-right"></i> Perfect Job</li>
+              <li><i class="fas fa-angle-right"></i> Love this more</li>
+              <li><i class="fas fa-angle-right"></i> It's so so good</li>
+              <li><i class="fas fa-angle-right"></i> More Features</li>
             </ul>
             <Button id={"advanced"} onMouseMove={hoverButton} size="lg" style={{backgroundColor: "#ffcc66"}}>
               <span>Select</span>
@@ -79,12 +79,12 @@ function App() {
             <h3>Pro<br/>------<br/>Yearly</h3>
             <h1>$120</h1>
             <ul>
-              <li>Very very good</li>
-              <li>Even more</li>
-              <li>Perfect Job</li>
-              <li>Love this more</li>
-              <li>It's so so good</li>
-              <li>More Features</li>
+              <li><i class="fas fa-angle-right"></i> Very very good</li>
+              <li><i class="fas fa-angle-right"></i> Even more</li>
+              <li><i class="fas fa-angle-right"></i> Perfect Job</li>
+              <li><i class="fas fa-angle-right"></i> Love this more</li>
+              <li><i class="fas fa-angle-right"></i> It's so so good</li>
+              <li><i class="fas fa-angle-right"></i> More Features</li>
             </ul>
             <Button id={"pro"} onMouseMove={hoverButton} size="lg" style={{backgroundColor: "#00cccc"}}>
               <span>Select</span>

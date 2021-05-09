@@ -57,12 +57,12 @@
   --size: 400px;
 }
 
-/* ul, li {
+ul, li {
   list-style: none;
   padding: 0px;
 }
 
-li::before {
+/* li::before {
   content: '\f105';
   font-family: FontAwesome;
   display: inline-block;
