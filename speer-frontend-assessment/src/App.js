@@ -21,6 +21,7 @@ function App() {
     var x = e.pageX - 80;
     var y = e.pageY - 130;
 
+    //centers the animation point
     switch (e.target.id) {
       case "advanced":
         x -= 530;

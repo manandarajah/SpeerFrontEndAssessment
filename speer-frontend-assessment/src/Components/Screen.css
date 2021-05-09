@@ -27,6 +27,7 @@
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  border: none;
   cursor: pointer;
   outline: none;
   overflow: hidden;
@@ -56,20 +57,16 @@
   --size: 400px;
 }
 
-ul {
+/* ul, li {
   list-style: none;
   padding: 0px;
 }
 
-li {
-  padding-left: 1.3em;
-}
-
 li::before {
-  content: "\f8cf";
+  content: '\f105';
   font-family: FontAwesome;
   display: inline-block;
-}
+} */
 
 #pricing > .row > .col {
   font-size: 30px;
