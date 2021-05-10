@@ -1,5 +1,41 @@
+/* All sections */
+
+.section {
+  height: 50vh;
+}
+
 /* hero */
 
 #hero {
   color: white;
+}
+
+.carousel-item {
+  height: 70vh;
+}
+
+.carousel-caption {
+  margin-bottom: 11.5em;
+}
+
+/* perks */
+
+#perks {
+  height: 60vh;
+}
+
+#perks > .row > .col > p {
+  margin-left: 2.9em;
+}
+
+#perks > .row > .col > p:first-of-type {
+  color: white;
+}
+
+#perks > .row > .col > h3 {
+  margin-left: 2.4em;
+}
+
+#perkstry {
+  margin-left: 5.4em;
 }

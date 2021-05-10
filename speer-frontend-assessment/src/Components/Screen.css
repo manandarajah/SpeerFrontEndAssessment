@@ -1,3 +1,10 @@
+/* All screens */
+
+.box {
+  width: 98vw;
+  height: 120vh;
+}
+
 /* pricing */
 
 #pricing > .row > .col {
@@ -8,54 +15,6 @@
   margin-left: 2.2em;
   font-size: 40px;
 }
-
-.btn {
-  position: relative;
-  padding: 10px 70px 10px 70px;
-  border-radius: 100px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border: none;
-  cursor: pointer;
-  outline: none;
-  overflow: hidden;
-  border-radius: 100px;
-}
-
-.btn span {
-  position: relative;
-  pointer-events: none;
-}
-
-.btn::before {
-  --size: 0;
-  content: '';
-  position: absolute;
-  left: var(--x);
-  top: var(--y);
-  width: var(--size);
-  height: var(--size);
-  background: radial-gradient(circle closest-side, #4405f7, transparent);
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  transition: width .2s ease, height .2s ease;
-}
-
-.btn:hover::before {
-  --size: 400px;
-}
-
-ul, li {
-  list-style: none;
-  padding: 0px;
-}
-
-/* li::before {
-  content: '\f105';
-  font-family: FontAwesome;
-  display: inline-block;
-} */
 
 #pricing > .row > .col > h1 {
   font-size: 100px;
@@ -73,52 +32,10 @@ ul, li {
   color: #00cccc;
 }
 
-/* pricing & perks */
+/* main */
 
-#pricing, #perks {
-  color: white;
-  text-align: left;
-}
-
-#pricing > h1, #perks > h1 {
-  margin-left: 1.7em;
-  font-size: 50px;
-  font-family: sans-serif;
-  font-weight: bold;
-}
-
-#pricing > .row > .col, #perks > .row > .col {
-  font-size: 30px;
-}
-
-#pricing > .row > .col > h3, #perks > .row > .col > h3 {
-  font-size: 35px;
-}
-
-#pricing > .row > .col > p, #perks > .row > .col > p {
-  color: #1a1a1a;
-}
-
-/* perks */
-
-#perks {
-  height: 60vh;
-}
-
-#perks > .row > .col > p {
-  margin-left: 2.9em;
-}
-
-#perks > .row > .col > p:first-of-type {
-  color: white;
-}
-
-#perks > .row > .col > h3 {
-  margin-left: 2.4em;
-}
-
-#perkstry {
-  margin-left: 5.4em;
+#main {
+  height: 160vh;
 }
 
 /* payment */
