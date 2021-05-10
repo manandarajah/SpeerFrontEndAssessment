@@ -32,7 +32,7 @@ function App() {
       case "pro":
         x -= 1060;
         break;
-      case "pricingbtn":
+      case "herobtn":
         x -= 600;
         y -= 200;
         break;
@@ -138,6 +138,7 @@ function App() {
               <Carousel.Caption>
                 <h3>First slide label</h3>
                 <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                <Button id="herobtn" class="btn-mix-noborder" onMouseMove={hoverButton}><span>Pricing</span></Button>
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item interval={10000}>
@@ -150,6 +151,7 @@ function App() {
               <Carousel.Caption>
                 <h3>Second slide label</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <Button id="herobtn" class="btn-mix-noborder" onMouseMove={hoverButton}><span>Pricing</span></Button>
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item interval={10000}>
@@ -162,10 +164,10 @@ function App() {
               <Carousel.Caption>
                 <h3>Third slide label</h3>
                 <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                <Button id="herobtn" class="btn-mix-noborder" onMouseMove={hoverButton}><span>Pricing</span></Button>
               </Carousel.Caption>
             </Carousel.Item>
           </Carousel>
-          <Button id="pricingbtn" onMouseMove={hoverButton}><span>Pricing</span></Button>
         </Section>
         <Section id="red" backgroundColor="#ff3333">
           <Button id="redtry" onMouseMove={hoverButton}><span>Try it now</span></Button>
