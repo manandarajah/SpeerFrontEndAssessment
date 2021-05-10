@@ -9,6 +9,7 @@ import {Row} from 'react-bootstrap';
 import {Col} from 'react-bootstrap';
 import {Button} from 'react-bootstrap';
 import {Carousel} from 'react-bootstrap';
+import GradientButton from 'react-linear-gradient-button';
 
 function App() {
 
@@ -138,7 +139,7 @@ function App() {
               <Carousel.Caption>
                 <h3>First slide label</h3>
                 <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                <Button id="herobtn" class="btn-mix-noborder" onMouseMove={hoverButton}><span>Pricing</span></Button>
+                <GradientButton id="herobtn" onMouseMove={hoverButton}><span>Pricing</span></GradientButton>
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item interval={10000}>
@@ -151,7 +152,7 @@ function App() {
               <Carousel.Caption>
                 <h3>Second slide label</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <Button id="herobtn" class="btn-mix-noborder" onMouseMove={hoverButton}><span>Pricing</span></Button>
+                <GradientButton id="herobtn" onMouseMove={hoverButton}><span>Pricing</span></GradientButton>
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item interval={10000}>
@@ -164,7 +165,7 @@ function App() {
               <Carousel.Caption>
                 <h3>Third slide label</h3>
                 <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                <Button id="herobtn" class="btn-mix-noborder" onMouseMove={hoverButton}><span>Pricing</span></Button>
+                <GradientButton id="herobtn" onMouseMove={hoverButton}><span>Pricing</span></GradientButton>
               </Carousel.Caption>
             </Carousel.Item>
           </Carousel>
