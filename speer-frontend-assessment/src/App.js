@@ -13,11 +13,6 @@ import GradientButton from 'react-linear-gradient-button';
 
 function App() {
 
-  function redirect() {
-    //console.log(e.pageX + " " + e.pageY);
-    window.location.href = "#payment";
-  }
-
   function hoverButton(e) {
     /*var x = e.pageX - e.target.offsetLeft;
   	var y = e.pageY - e.target.offsetTop;*/
@@ -91,9 +86,11 @@ function App() {
               <li><i class="fas fa-angle-right"></i> It's so good</li>
               <li><i class="fas fa-angle-right"></i> Features</li>
             </ul>
-            <Button id={"basic"} onMouseMove={hoverButton} onClick={redirect} size="lg" style={{backgroundColor: "#ff3333"}}>
-              <span>Select</span>
-            </Button>
+            <a href="#payment">
+              <Button id={"basic"} onMouseMove={hoverButton} size="lg" style={{backgroundColor: "#ff3333"}}>
+                <span>Select</span>
+              </Button>
+            </a>
           </Col>
           <Col>
             <h3>Advanced<br/>------<br/>Yearly</h3>
@@ -106,9 +103,11 @@ function App() {
               <li><i class="fas fa-angle-right"></i> It's so so good</li>
               <li><i class="fas fa-angle-right"></i> More Features</li>
             </ul>
-            <Button id={"advanced"} onMouseMove={hoverButton} onClick={redirect} size="lg" style={{backgroundColor: "#ffcc66"}}>
-              <span>Select</span>
-            </Button>
+            <a href="#payment">
+              <Button id={"advanced"} onMouseMove={hoverButton} size="lg" style={{backgroundColor: "#ffcc66"}}>
+                <span>Select</span>
+              </Button>
+            </a>
           </Col>
           <Col>
             <h3>Pro<br/>------<br/>Yearly</h3>
@@ -121,9 +120,11 @@ function App() {
               <li><i class="fas fa-angle-right"></i> It's so so good</li>
               <li><i class="fas fa-angle-right"></i> More Features</li>
             </ul>
-            <Button id={"pro"} onMouseMove={hoverButton} onClick={redirect} size="lg" style={{backgroundColor: "#00cccc"}}>
-              <span>Select</span>
-            </Button>
+            <a href="#payment">
+              <Button id={"pro"} onMouseMove={hoverButton} size="lg" style={{backgroundColor: "#00cccc"}}>
+                <span>Select</span>
+              </Button>
+            </a>
           </Col>
         </Row>
       </Screen>
@@ -139,7 +140,9 @@ function App() {
               <Carousel.Caption>
                 <h3>First slide label</h3>
                 <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                <GradientButton id="herobtn" style={{marginLeft: 500}} onMouseMove={hoverButton}><span>Pricing</span></GradientButton>
+                <a href="#pricing">
+                  <GradientButton id="herobtn" style={{marginLeft: 500}} onMouseMove={hoverButton}><span>Pricing</span></GradientButton>
+                </a>
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item interval={10000}>
@@ -152,7 +155,9 @@ function App() {
               <Carousel.Caption>
                 <h3>Second slide label</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <GradientButton id="herobtn" style={{marginLeft: 500}} onMouseMove={hoverButton}><span>Pricing</span></GradientButton>
+                <a href="#pricing">
+                  <GradientButton id="herobtn" style={{marginLeft: 500}} onMouseMove={hoverButton}><span>Pricing</span></GradientButton>
+                </a>
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item interval={10000}>
@@ -165,7 +170,9 @@ function App() {
               <Carousel.Caption>
                 <h3>Third slide label</h3>
                 <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                <GradientButton id="herobtn" style={{marginLeft: 500}} onMouseMove={hoverButton}><span>Pricing</span></GradientButton>
+                <a href="#pricing">
+                  <GradientButton id="herobtn" style={{marginLeft: 500}} onMouseMove={hoverButton}><span>Pricing</span></GradientButton>
+                </a>
               </Carousel.Caption>
             </Carousel.Item>
           </Carousel>
