@@ -28,36 +28,28 @@ function App() {
       case "pro":
         x -= 1060;
         break;
-      case "herobtn":
-        x -= 600;
-        y -= 200;
-        break;
       case "redtry":
         x -= 490;
-        y -= 250;
+        y -= 720;
         break;
       case "reddemo":
         x -= 690;
-        y -= 250;
+        y -= 720;
         break;
       case "yellowtry":
         x -= 490;
-        y -= 290;
+        y -= 780;
         break;
       case "yellowdemo":
         x -= 690;
-        y -= 290;
+        y -= 780;
         break;
       case "perkstry":
-        y -= 710;
+        y -= 1200;
         break;
       case "reviewstry":
-        x -= 600;
-        y -= 790;
-        break;
-      case "getexptry":
-        x -= 600;
-        y -= 840;
+        x -= 595;
+        y -= 1270;
         break;
     }
 
@@ -219,7 +211,7 @@ function App() {
         </Section>
         <Section id="getexpnow">
           <a href="#pricing">
-            <Button id="getexptry" onMouseMove={hoverButton}><span>Try it now</span></Button>
+            <GradientButton id="getexptry" style={{marginLeft: 745}} onMouseMove={hoverButton}><span>Try it now</span></GradientButton>
           </a>
         </Section>
       </Screen>
