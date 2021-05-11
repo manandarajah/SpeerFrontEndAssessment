@@ -13,6 +13,8 @@ import GradientButton from 'react-linear-gradient-button';
 
 function App() {
 
+  //When you hover over a 'Try now' button, it calculates the cursor animation coordinates based on
+  //its button ID
   function hoverButton(e) {
     /*var x = e.pageX - e.target.offsetLeft;
   	var y = e.pageY - e.target.offsetTop;*/
@@ -63,6 +65,8 @@ function App() {
 
   return (
     <div className="App">
+
+      {/* Pricing screen with different pricing plans */}
       <Screen id="pricing" backgroundColor="#1a1a1a">
         <h1>PRICING</h1>
         <p>Test out our app today! Choose from three subscription based payment models</p>
@@ -120,7 +124,11 @@ function App() {
           </Col>
         </Row>
       </Screen>
+
+      {/* The main screen where sections 1-6 are stored */}
       <Screen id="main">
+
+        {/* Section 1 - Carousel with gradient button */}
         <Section id="hero">
           <Carousel>
             <Carousel.Item interval={10000}>
@@ -133,7 +141,7 @@ function App() {
                 <h3>First slide label</h3>
                 <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                 <a href="#pricing">
-                  <GradientButton id="herobtn" style={{marginLeft: 500}} onMouseMove={hoverButton}><span>Pricing</span></GradientButton>
+                  <GradientButton style={{marginLeft: 500}} onMouseMove={hoverButton}><span>Pricing</span></GradientButton>
                 </a>
               </Carousel.Caption>
             </Carousel.Item>
@@ -148,7 +156,7 @@ function App() {
                 <h3>Second slide label</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <a href="#pricing">
-                  <GradientButton id="herobtn" style={{marginLeft: 500}} onMouseMove={hoverButton}><span>Pricing</span></GradientButton>
+                  <GradientButton style={{marginLeft: 500}} onMouseMove={hoverButton}><span>Pricing</span></GradientButton>
                 </a>
               </Carousel.Caption>
             </Carousel.Item>
@@ -163,24 +171,30 @@ function App() {
                 <h3>Third slide label</h3>
                 <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                 <a href="#pricing">
-                  <GradientButton id="herobtn" style={{marginLeft: 500}} onMouseMove={hoverButton}><span>Pricing</span></GradientButton>
+                  <GradientButton style={{marginLeft: 500}} onMouseMove={hoverButton}><span>Pricing</span></GradientButton>
                 </a>
               </Carousel.Caption>
             </Carousel.Item>
           </Carousel>
         </Section>
+
+        {/* Section 2 - RED */}
         <Section id="red" backgroundColor="#ff3333">
           <a href="#pricing">
             <Button id="redtry" onMouseMove={hoverButton}><span>Try it now</span></Button>
           </a>
           <Button id="reddemo" onMouseMove={hoverButton}><span>See Demo</span></Button>
         </Section>
-          <Section id="yellow" backgroundColor="#ffff66">
+
+        {/* Section 3 - YELLOW */}
+        <Section id="yellow" backgroundColor="#ffff66">
           <a href="#pricing">
             <Button id="yellowtry" onMouseMove={hoverButton}><span>Try it now</span></Button>
           </a>
           <Button id="yellowdemo" onMouseMove={hoverButton}><span>See Demo</span></Button>
         </Section>
+
+        {/* Section 4 - Perks */}
         <Section id="perks" backgroundColor="#ff3333">
           <h1>PERKS</h1>
           <Row>
@@ -204,17 +218,23 @@ function App() {
             <Button id="perkstry" onMouseMove={hoverButton}><span>Try it now</span></Button>
           </a>
         </Section>
+
+        {/* Section 5 - Reviews */}
         <Section id="reviews">
           <a href="#pricing">
             <Button id="reviewstry" onMouseMove={hoverButton}><span>Try it now</span></Button>
           </a>
         </Section>
+
+        {/* Section 6 - Get EXP Now */}
         <Section id="getexpnow">
           <a href="#pricing">
             <GradientButton id="getexptry" style={{marginLeft: 745}} onMouseMove={hoverButton}><span>Try it now</span></GradientButton>
           </a>
         </Section>
       </Screen>
+
+      {/* Payment screen */}
       <Screen id="payment" backgroundColor="#7300e6">
         <h1>Payments</h1>
         <p><i class="fas fa-envelope"></i> support@experienceconcerts.co</p>
