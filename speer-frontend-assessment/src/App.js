@@ -178,11 +178,15 @@ function App() {
           </Carousel>
         </Section>
         <Section id="red" backgroundColor="#ff3333">
-          <Button id="redtry" onMouseMove={hoverButton}><span>Try it now</span></Button>
+          <a href="#pricing">
+            <Button id="redtry" onMouseMove={hoverButton}><span>Try it now</span></Button>
+          </a>
           <Button id="reddemo" onMouseMove={hoverButton}><span>See Demo</span></Button>
         </Section>
-        <Section id="yellow" backgroundColor="#ffff66">
-          <Button id="yellowtry" onMouseMove={hoverButton}><span>Try it now</span></Button>
+          <Section id="yellow" backgroundColor="#ffff66">
+          <a href="#pricing">
+            <Button id="yellowtry" onMouseMove={hoverButton}><span>Try it now</span></Button>
+          </a>
           <Button id="yellowdemo" onMouseMove={hoverButton}><span>See Demo</span></Button>
         </Section>
         <Section id="perks" backgroundColor="#ff3333">
@@ -204,13 +208,19 @@ function App() {
               <p>No committment, cancel anytime. Never worry about forgetting a payment again!</p>
             </Col>
           </Row>
-          <Button id="perkstry" onMouseMove={hoverButton}><span>Try it now</span></Button>
+          <a href="#pricing">
+            <Button id="perkstry" onMouseMove={hoverButton}><span>Try it now</span></Button>
+          </a>
         </Section>
         <Section id="reviews">
-          <Button id="reviewstry" onMouseMove={hoverButton}><span>Try it now</span></Button>
+          <a href="#pricing">
+            <Button id="reviewstry" onMouseMove={hoverButton}><span>Try it now</span></Button>
+          </a>
         </Section>
         <Section id="getexpnow">
-          <Button id="getexptry" onMouseMove={hoverButton}><span>Try it now</span></Button>
+          <a href="#pricing">
+            <Button id="getexptry" onMouseMove={hoverButton}><span>Try it now</span></Button>
+          </a>
         </Section>
       </Screen>
       <Screen id="payment" backgroundColor="#7300e6">
